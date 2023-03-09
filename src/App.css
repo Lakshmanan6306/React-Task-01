@@ -1,38 +1,81 @@
 .App {
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  align-content: center;
+}
+.container{
+  width: 80%;
+  height: 80vh;
+  margin-top: 4.5rem;
+  background-image: linear-gradient(to left,#a2ab58,#DECBA4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.card{
+  border: 1px solid transparent ;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,.5);
   color: white;
+  background-image:linear-gradient(to right,#3C3B3F,#605C3C );
+  /* #BA8B02,#31312F */
 }
-
-.App-link {
-  color: #61dafb;
+.title1{
+  font-size: 10px;
+  letter-spacing: 1px;
+  opacity: .7;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title2{
+  font-size: 25px;
+  letter-spacing: 1px;
+  opacity: .9;
+}
+.title2 span{
+  font-size: 10px;
+  opacity: .7;
+}
+hr{
+  opacity: .7;
+}
+.list{
+  list-style: none;
+  margin-top: 20px;
+  padding: 5px;
+}
+.list li{
+  font-size:14px;
+  text-align: left;
+  margin-top: 3px;
+  opacity: .8;
+}
+/* .list li span{
+  margin-right: 5px;
+} */
+.button{
+  border: none;
+  outline: none;
+  padding: 8px 60px;
+  background-image: linear-gradient(to right,#dd1818,#8E0E00) ;
+  border-radius: 50px;
+  box-shadow: 1px 2px 1px 2px rgba(0,0,0,.4);
+  font-weight: bold;
+  font-size: 12.5px;
+  color: white;
+  opacity: 0.9;
+}
+.container .card:hover{
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  transition: .5s;
+}
+.button:hover{
+  background:rgb(222, 220, 220);
+  color:rgb(81, 80, 80);
+  cursor:pointer;
+  transition:.2s;
 }
